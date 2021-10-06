@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="navigation-section">
+        <div class="navigation">
+            <img src="hungry.jpg">
+            <h4 id="home">Home</h4>
+            <h4>About</h4>
+            <h4>Blog</h4>
+            <h4>Recipes</h4>
+        </div>
+    </div>
+    <div id="search-section">
+        <input type="search" id="search-bar" placeholder="search your favorite food">
+        <button id="search-button" onclick="searchFood()">Search</button>
+    </div>
+    <div id="ingredient-list"></div>
+    <div id="search-nothing" class="text-center">
+        <h3>You haven't search anything.</h3>
+        <h3>Please type here ☝️</h3>
+    </div>
+    <div id="meal-container"></div>
+    <script src="file.js"></script>
+</body>
+
+</html>
