@@ -13,15 +13,17 @@
 </head>
 
 <body>
-    <div id="navigation-section">
-        <div class="navigation">
-            <img src="hungry.jpg">
-            <h4 id="home">Home</h4>
-            <h4>About</h4>
-            <h4>Blog</h4>
-            <h4>Recipes</h4>
+    <section class = "navigation">
+        <div class="nav-bar">
+            <div><img src="hungry.jpg" alt=""></div>
+            <ul class = "nav-link">
+                <a href="#"><li>Home</li></a>
+                <a href="#"><li>Blog</li></a>
+                <a href="#"><li>Menu</li></a>
+                <a href="#"><li>Recipes</li></a>
+            </ul>
         </div>
-    </div>
+    </section>
     <div id="search-section">
         <input type="search" id="search-bar" placeholder="search your favorite food">
         <button id="search-button" onclick="searchFood()">Search</button>

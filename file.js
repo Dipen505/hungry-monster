@@ -2,7 +2,7 @@ const showingDisplay = condition => {
     const blockDisplay = document.getElementById('ingredient-list');
     blockDisplay.style.display = condition;
 }
-                                            //Searching meal function
+//Searching meal function
 const searchFood = () => {
     inputText = document.getElementById('search-bar');
     if (inputText.value === "") {
@@ -18,7 +18,7 @@ const searchFood = () => {
         showingDisplay("none");
     }
 }
-                                            // Function for after searched available meal
+// Function for after searched available meal
 const mealList = meals => {
     let dataHouse = "";
     meals.forEach(item => {
@@ -30,7 +30,7 @@ const mealList = meals => {
         document.getElementById('meal-container').innerHTML = dataHouse;
     })
 }
-                                            //Meal Id collector function
+//Meal Id collector function
 const getMealId = id => {
     fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`)
         .then(res => res.json())
@@ -39,7 +39,7 @@ const getMealId = id => {
     document.getElementById('search-nothing').style.display = "none";
 }
 
-                                        // Showing ingredient detail function
+// Showing ingredient detail function
 const getIngredient = ingredient => {
     const imageDiv = document.getElementById('ingredient-list');
     imageDiv.innerHTML = `
