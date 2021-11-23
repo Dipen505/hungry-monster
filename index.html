@@ -16,6 +16,7 @@
     <section class = "navigation">
         <div class="nav-bar">
             <div><img src="hungry.jpg" alt=""></div>
+            <h1>Hungry Monster</h1>
             <ul class = "nav-link">
                 <a href="#"><li>Home</li></a>
                 <a href="#"><li>Blog</li></a>
@@ -29,11 +30,14 @@
         <button id="search-button" onclick="searchFood()">Search</button>
     </div>
     <div id="ingredient-list"></div>
-    <div id="search-nothing" class="text-center">
-        <h3>You haven't search anything.</h3>
-        <h3>Please type here ☝️</h3>
+    <div class="nothing-search">
+        <div id="search-nothing" class="text-center">
+            <h3>You haven't search anything.</h3>
+            <h3>Please type here ☝️</h3>
+        </div>
     </div>
-    <div id="meal-container"></div>
+    <section class = "meal-gallery"><div id="meal-container"></div></section>
+    <section class="detail"></section>
     <script src="file.js"></script>
 </body>
 
