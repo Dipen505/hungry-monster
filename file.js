@@ -2,7 +2,7 @@ const imageDiv = document.querySelector('#ingredient-list');
 const mealGallery = document.querySelector('.meal-gallery');
 const inputText = document.getElementById('search-bar');
 
-document.getElementById('search-bar').addEventListener('keypress', function (event) {
+document.getElementById('search-bar').addEventListener('keyup', function (event) {
     if (inputText.value === "") {
         document.querySelector('.nothing-search').style.display = "block";
     }
